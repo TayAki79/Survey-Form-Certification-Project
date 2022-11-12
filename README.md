@@ -29,4 +29,4 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
 
 My Learnings:
 
-
+Choosing both attributes selected and disabled at the same time for an option element inside a select element makes the first option not clickable but it still appears inside the selection window
