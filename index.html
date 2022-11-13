@@ -12,112 +12,116 @@
 </head>
 
 <body>
-  <img src="./image/background-image" alt="students learning">
-  <header class="title">
-    <h1>
-      freeCodeCamp Survey Form
-    </h1>  
-    <p class="italic">
-      Thank you for taking the time to help us improve the platform
-    </p>
-  </header>
-  <form class="survey-form">
-    <div class="form">
-      <label for="name">
-        Name 
-        <input type="text" id="name" placeholder="Enter your name">
-      </label>
-    </div>
-    <div class="form">
-      <label for="email">
-        Email 
-        <input type="email" id="email" placeholder="Enter your Email">
-      </label>
-    </div>
-    <div class="form">
-      <label for="age">
-        Age (optional) 
-        <input type="number" id="age" placeholder="Age">
-      </label>
-    </div>
-    <div class="form">
-      <label for="role">Which option best describes your current role? 
-        <select class="stacked role" id="role">
-          <option value="select-current-role" selected disabled>Select current role</option>
-          <option value="student">Student</option>
-          <option value="full-time-job">Full Time Job</option>
-          <option value="full-time-learner">Full Time Learner</option>
-          <option value="not-to-say">Prefer not to say</option>
-          <option value="Other">Other</option>
-        </select>
-      </label>
-    </div>
-    <div class="form">
-      <p>Would you recommend freeCodeCamp to a friend?</p> 
-          <label class="stacked" for="definitely">
-            <input type="radio" name="recommend" id="definitely" value="definitely"> Definitely
+  <div class="background-image">
+    <div class="image-overlay">
+      <header class="title">
+        <h1>
+          freeCodeCamp Survey Form
+        </h1>  
+        <p class="italic">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form class="survey-form">
+        <div class="form">
+          <label for="name">
+            Name 
+            <input type="text" id="name" placeholder="Enter your name">
           </label>
-          <label class="stacked" for="maybe">
-            <input type="radio" name="recommend" id="maybe" value="maybe"> Maybe
+        </div>
+        <div class="form">
+          <label for="email">
+            Email 
+            <input type="email" id="email" placeholder="Enter your Email">
           </label>
-          <label class="stacked" for="not-sure">
-            <input type="radio" name="recommend" id="not-sure" value="not-sure"> Not sure
+        </div>
+        <div class="form">
+          <label for="age">
+            Age (optional) 
+            <input type="number" id="age" placeholder="Age">
           </label>
+        </div>
+        <div class="form">
+          <label for="role">Which option best describes your current role? 
+            <select class="stacked role" id="role">
+              <option value="select-current-role" selected disabled>Select current role</option>
+              <option value="student">Student</option>
+              <option value="full-time-job">Full Time Job</option>
+              <option value="full-time-learner">Full Time Learner</option>
+              <option value="not-to-say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+        </div>
+        <div class="form">
+          <p>Would you recommend freeCodeCamp to a friend?</p> 
+              <label class="stacked" for="definitely">
+                <input type="radio" name="recommend" id="definitely" value="definitely"> Definitely
+              </label>
+              <label class="stacked" for="maybe">
+                <input type="radio" name="recommend" id="maybe" value="maybe"> Maybe
+              </label>
+              <label class="stacked" for="not-sure">
+                <input type="radio" name="recommend" id="not-sure" value="not-sure"> Not sure
+              </label>
+        </div>
+        <div class="form">
+          <label for="fav-feature">What is your favorite feature of freeCodeCamp? 
+            <select class="stacked" id="fav-feature">
+              <option value="select-an-option" selected disabled>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="community">Community</option>
+              <option value="projects">Projects</option>
+              <option value="open-source">Open Source</option>
+            </select>
+          </label>
+        </div>
+        <div class="form">
+          <p>What would you like to see improved?</p> 
+            <label class="stacked" for="front-end-projects">
+              <input type="checkbox" id="front-end-projects" name="improvements" value="front-end-projects"> Front-end Projects
+            </label>
+            <label class="stacked" for="back-end-projects">
+              <input type="checkbox" id="back-end-projects" name="improvements" value="back-end-projects"> Back-end Projects
+            </label>
+            <label class="stacked" for="data-visualization">
+              <input type="checkbox" id="data-visualization" name="improvements" value="data-visualization"> Data Visualization
+            </label>
+            <label class="stacked" for="challenges">
+              <input type="checkbox" id="challenges" name="improvements" value="challenges"> Challenges
+            </label>
+            <label class="stacked" for="open-source-community">
+              <input type="checkbox" id="open-source-community" name="improvements" value="open-source-community"> Open Source Community
+            </label>
+            <label class="stacked" for="gitter-help-rooms">
+              <input type="checkbox" id="gitter-help-rooms" name="improvements" value="gitter-help-rooms"> Gitter help rooms
+            </label>
+            <label class="stacked" for="videos">
+              <input type="checkbox" id="videos" name="improvements" value="videos"> videos
+            </label>
+            <label for="city-meetups" class="stacked">
+              <input type="checkbox" id="city-meetups" name="improvements" value="city-meetups"> City Meetups
+            </label>
+            <label for="wiki" class="wiki">
+              <input type="checkbox" id="wiki" name="improvements" value="wiki"> Wiki
+            </label>
+            <label for="forum" class="stacked">
+              <input type="checkbox" id="forum" name="improvements" value="forum"> Forum
+            </label>
+            <label for="additional-courses"  class="additional-courses">
+              <input type="checkbox" id="additional-courses" name="improvements" value="additional-courses"> Additional Courses
+            </label>
+        </div>
+        <div class="form">
+          <label class="stacked" for="suggestions">Any comments or suggestions? 
+            <textarea id="suggestions" placeholder="Enter your comment here..." rows="5" cols="30"></textarea>
+          </label>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
     </div>
-    <div class="form">
-      <label for="fav-feature">What is your favorite feature of freeCodeCamp? 
-        <select class="stacked" id="fav-feature">
-          <option value="select-an-option" selected disabled>Select an option</option>
-          <option value="challenges">Challenges</option>
-          <option value="community">Community</option>
-          <option value="projects">Projects</option>
-          <option value="open-source">Open Source</option>
-        </select>
-      </label>
-    </div>
-    <div class="form">
-      <p>What would you like to see improved?</p> 
-        <label class="stacked" for="front-end-projects">
-          <input type="checkbox" id="front-end-projects" name="improvements" value="front-end-projects"> Front-end Projects
-        </label>
-        <label class="stacked" for="back-end-projects">
-          <input type="checkbox" id="back-end-projects" name="improvements" value="back-end-projects"> Back-end Projects
-        </label>
-        <label class="stacked" for="data-visualization">
-          <input type="checkbox" id="data-visualization" name="improvements" value="data-visualization"> Data Visualization
-        </label>
-        <label class="stacked" for="challenges">
-          <input type="checkbox" id="challenges" name="improvements" value="challenges"> Challenges
-        </label>
-        <label class="stacked" for="open-source-community">
-          <input type="checkbox" id="open-source-community" name="improvements" value="open-source-community"> Open Source Community
-        </label>
-        <label class="stacked" for="gitter-help-rooms">
-          <input type="checkbox" id="gitter-help-rooms" name="improvements" value="gitter-help-rooms"> Gitter help rooms
-        </label>
-        <label class="stacked" for="videos">
-          <input type="checkbox" id="videos" name="improvements" value="videos"> videos
-        </label>
-        <label for="city-meetups" class="stacked">
-          <input type="checkbox" id="city-meetups" name="improvements" value="city-meetups"> City Meetups
-        </label>
-        <label for="wiki" class="wiki">
-          <input type="checkbox" id="wiki" name="improvements" value="wiki"> Wiki
-        </label>
-        <label for="forum" class="stacked">
-          <input type="checkbox" id="forum" name="improvements" value="forum"> Forum
-        </label>
-        <label for="additional-courses"  class="additional-courses">
-          <input type="checkbox" id="additional-courses" name="improvements" value="additional-courses"> Additional Courses
-        </label>
-    </div>
-    <div class="form">
-      <label class="stacked" for="suggestions">Any comments or suggestions? 
-        <textarea id="suggestions" placeholder="Enter your comment here..." rows="5" cols="30"></textarea>
-      </label>
-    </div>
-    <input type="submit" value="Submit">
-  </form>
+  </div>
+  
 </body>
 <footer>
   <p>This page was built by <a href="https://github.com/TayAki79/Survey-Form-Certification-Project.git">TayAki79</a></p>
