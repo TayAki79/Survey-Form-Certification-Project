@@ -30,3 +30,7 @@ Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to l
 My Learnings:
 
 Choosing both attributes selected and disabled at the same time for an option element inside a select element makes the first option not clickable but it still appears inside the selection window
+
+Adding a Comment in an html-file using VSCode you can use the Keyboard-Shortcut cmd+K and then cmd+C
+
+
